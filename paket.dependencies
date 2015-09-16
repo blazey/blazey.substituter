@@ -4,6 +4,8 @@ nuget Castle.Windsor
 nuget FSharp.Formatting
 nuget FAKE
 nuget Moq
+nuget NUnit
+nuget Shouldly
 nuget SourceLink.Fake
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx

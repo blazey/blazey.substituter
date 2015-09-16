@@ -18,8 +18,10 @@ NUGET
       Microsoft.Bcl (>= 1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
     Moq (4.2.1507.118)
+    NUnit (2.6.4)
     Octokit (0.15.0)
       Microsoft.Net.Http
+    Shouldly (2.6.0)
     SourceLink.Fake (1.1.0)
 GITHUB
   remote: fsharp/FAKE
