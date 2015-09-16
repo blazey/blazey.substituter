@@ -1,7 +1,9 @@
 source https://nuget.org/api/v2
 
+nuget Castle.Windsor
 nuget FSharp.Formatting
 nuget FAKE
+nuget Moq
 nuget SourceLink.Fake
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx

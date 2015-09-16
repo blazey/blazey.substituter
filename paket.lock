@@ -1,6 +1,9 @@
 NUGET
   remote: https://nuget.org/api/v2
   specs:
+    Castle.Core (3.3.3)
+    Castle.Windsor (3.3.0)
+      Castle.Core (>= 3.3.0)
     FAKE (4.4.1)
     FSharp.Compiler.Service (0.0.90)
     FSharp.Formatting (2.10.3)
@@ -14,8 +17,7 @@ NUGET
     Microsoft.Net.Http (2.2.29)
       Microsoft.Bcl (>= 1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
-    NUnit (2.6.4)
-    NUnit.Runners (2.6.4)
+    Moq (4.2.1507.118)
     Octokit (0.15.0)
       Microsoft.Net.Http
     SourceLink.Fake (1.1.0)
