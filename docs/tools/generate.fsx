@@ -11,17 +11,17 @@
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
 let referenceBinaries = []
 // Web site location for the generated documentation
-let website = "/##ProjectName##"
+let website = "/blazey.substituter"
 
-let githubLink = "http://github.com/##GitHome##/##GitName##"
+let githubLink = "http://github.com/blazey/blazey.substituter"
 
 // Specify more information about your project
 let info =
-  [ "project-name", "##ProjectName##"
-    "project-author", "##Author##"
-    "project-summary", "##Summary##"
+  [ "project-name", "blazey.substituter"
+    "project-author", "Ed Blackburn"
+    "project-summary", "A Castle Windsor facility that substitutes components for unit testing purposes."
     "project-github", githubLink
-    "project-nuget", "http://nuget.org/packages/##ProjectName##" ]
+    "project-nuget", "http://nuget.org/packages/blazey.substituter" ]
 
 // --------------------------------------------------------------------------------------
 // For typical project, no changes are needed below

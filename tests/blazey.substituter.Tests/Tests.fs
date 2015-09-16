@@ -1,6 +1,6 @@
-﻿module FSharp.ProjectScaffold.Tests
+module blazey.substituter.Tests
 
-open FSharp.ProjectTemplate
+open blazey.substituter
 open NUnit.Framework
 
 [<Test>]

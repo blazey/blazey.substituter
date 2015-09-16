@@ -28,38 +28,38 @@ open SourceLink
 
 // The name of the project
 // (used by attributes in AssemblyInfo, name of a NuGet package and directory in 'src')
-let project = "##ProjectName##"
+let project = "blazey.substituter"
 
 // Short summary of the project
 // (used as description in AssemblyInfo and as a short summary for NuGet package)
-let summary = "##Summary##"
+let summary = "A Castle Windsor facility that substitutes components for unit testing purposes."
 
 // Longer description of the project
 // (used as a description for NuGet package; line breaks are automatically cleaned up)
-let description = "##Description##"
+let description = "Provides simple configuration to allow substituting Castle.Windsor components during tests."
 
 // List of author names (for NuGet package)
-let authors = [ "##Author##" ]
+let authors = [ "Ed Blackburn" ]
 
 // Tags for your project (for NuGet package)
-let tags = "##Tags##"
+let tags = "castle windsor unit test ioc component container dependencyinjection"
 
 // File system information 
-let solutionFile  = "##ProjectName##.sln"
+let solutionFile  = "blazey.substituter.sln"
 
 // Pattern specifying assemblies to be tested using NUnit
 let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
 
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
-let gitOwner = "##GitHome##" 
+let gitOwner = "blazey" 
 let gitHome = "https://github.com/" + gitOwner
 
 // The name of the project on GitHub
-let gitName = "##GitName##"
+let gitName = "blazey.substituter"
 
 // The url for the raw files hosted
-let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/##GitHome##"
+let gitRaw = environVarOrDefault "gitRaw" "https://raw.github.com/blazey"
 
 // --------------------------------------------------------------------------------------
 // END TODO: The rest of the file includes standard build steps

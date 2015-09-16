@@ -10,8 +10,8 @@ Introducing your project
 Say more
 
 *)
-#r "FSharp.ProjectScaffold.dll"
-open FSharp.ProjectScaffold
+#r "blazey.substituter.dll"
+open blazey.substituter
 
 Library.hello 0
 (**

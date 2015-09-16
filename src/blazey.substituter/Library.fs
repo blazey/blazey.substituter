@@ -1,4 +1,4 @@
-﻿namespace FSharp.ProjectTemplate
+namespace blazey.substituter
 
 /// Documentation for my library
 ///
