@@ -48,7 +48,7 @@ let tags = "castle windsor unit test ioc component container dependencyinjection
 let solutionFile  = "blazey.substituter.sln"
 
 // Pattern specifying assemblies to be tested using NUnit
-let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
+let testAssemblies = "tests/**/bin/Release/*specs*.dll"
 
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
