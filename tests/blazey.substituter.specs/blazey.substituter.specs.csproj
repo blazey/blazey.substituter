@@ -44,10 +44,10 @@
     <Compile Include="ContextSpecification\Catch.cs" />
     <Compile Include="ContextSpecification\context_specification.cs" />
     <Compile Include="ContextSpecification\when_using_context_specification.cs" />
-    <Compile Include="IService.cs" />
+    <Compile Include="Doubles\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TheComponent.cs" />
-    <Compile Include="TheSubstitute.cs" />
+    <Compile Include="Doubles\TheComponent.cs" />
+    <Compile Include="Doubles\TheSubstitute.cs" />
     <Compile Include="when_component_is_substituted_by_component_type.cs" />
     <Compile Include="when_component_is_substituted_with_an_instance.cs" />
     <Compile Include="when_component_is_substituted_with_a_factory_instance.cs" />
@@ -73,6 +73,9 @@
       <Private>True</Private>
       <Paket>True</Paket>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
   </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v3.5'">
