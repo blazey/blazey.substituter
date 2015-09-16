@@ -4,7 +4,7 @@ using Castle.Windsor;
 
 namespace blazey.substituter
 {
-    internal class RegisterComponent<TService> where TService : class
+    public class RegisterComponent<TService> where TService : class
     {
         private readonly Func<TService> _factory;
         private readonly Type _componentType;

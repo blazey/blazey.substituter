@@ -1,4 +1,5 @@
 ﻿using System;
+using Shouldly;
 
 namespace blazey.substituter.specs.ContextSpecification
 {

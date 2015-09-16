@@ -4,19 +4,14 @@ using Castle.Windsor;
 
 namespace blazey.substituter
 {
-    internal class SubstituterFacility : AbstractFacility
+
+    public class SubstituterFacility : AbstractFacility
     {
         private IWindsorContainer _container;
 
         public SubstituterFacility WithContainer(IWindsorContainer container)
         {
             _container = container;
-            return this;
-        }
-
-        public SubstituterFacility Stubs(StubsConfig stubs)
-        {
-            stubs.Register(_container);
             return this;
         }
 

@@ -4,7 +4,7 @@ using Moq;
 
 namespace blazey.substituter
 {
-    internal class SubstituteInstanceParams<TService> where TService : class
+    public class SubstituteInstanceParams<TService> where TService : class
     {
         internal static SubstituteInstanceParams<TService> Config(IWindsorContainer container,
             Action<SubstituteInstanceParams<TService>> config)
