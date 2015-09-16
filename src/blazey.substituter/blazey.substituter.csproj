@@ -40,9 +40,9 @@
     <Compile Include="Properties\AssemblyVersionInformation.cs" />
     <Compile Include="RegisterComponent.cs" />
     <Compile Include="StubsConfig.cs" />
-    <Compile Include="TestSubstituteFacility.cs" />
-    <Compile Include="TestSubstituteHandlerSelector.cs" />
-    <Compile Include="TestSubstituteInstanceParams.cs" />
+    <Compile Include="SubstituterFacility.cs" />
+    <Compile Include="SubstituterHandlerSelector.cs" />
+    <Compile Include="SubstituterInstanceParams.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />

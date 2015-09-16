@@ -4,12 +4,12 @@ using Moq;
 
 namespace blazey.substituter
 {
-    internal class TestSubstituteInstanceParams<TService> where TService : class
+    internal class SubstituteInstanceParams<TService> where TService : class
     {
-        internal static TestSubstituteInstanceParams<TService> Config(IWindsorContainer container,
-            Action<TestSubstituteInstanceParams<TService>> config)
+        internal static SubstituteInstanceParams<TService> Config(IWindsorContainer container,
+            Action<SubstituteInstanceParams<TService>> config)
         {
-            var args = new TestSubstituteInstanceParams<TService>();
+            var args = new SubstituteInstanceParams<TService>();
             config(args);
             args.Register(container);
             return args;

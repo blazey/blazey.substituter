@@ -35,7 +35,7 @@ namespace blazey.substituter
         internal void Register(IWindsorContainer container)
         {
             var service = typeof (TService);
-            var key = TestSubstituteFacility.TestKey(service);
+            var key = SubstituterFacility.TestKey(service);
 
             var componentRegistration = Component.For<TService>().Named(key);
 
