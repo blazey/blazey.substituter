@@ -4,7 +4,6 @@ using Castle.Windsor;
 
 namespace blazey.substituter
 {
-
     public class SubstituterFacility : AbstractFacility
     {
         private IWindsorContainer _container;

@@ -41,7 +41,7 @@
     <Compile Include="RegisterComponent.cs" />
     <Compile Include="SubstituterFacility.cs" />
     <Compile Include="SubstituterHandlerSelector.cs" />
-    <Compile Include="SubstituterInstanceParams.cs" />
+    <Compile Include="SubstituteInstanceParams.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="paket.references" />
