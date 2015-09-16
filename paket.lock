@@ -1,4 +1,7 @@
 NUGET
+  remote: ./packages
+  specs:
+    blazey.substituter (0.1)
   remote: https://nuget.org/api/v2
   specs:
     Castle.Core (3.3.3)

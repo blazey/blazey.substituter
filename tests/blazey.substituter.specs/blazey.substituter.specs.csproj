@@ -55,12 +55,6 @@
     <Compile Include="when_component_is_substituted_with_a_stub.cs" />
     <Compile Include="when_service_is_substituted.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\blazey.substituter\blazey.substituter.csproj">
-      <Project>{f8c211a8-2922-4386-b04a-ef3a56e2d466}</Project>
-      <Name>blazey.substituter</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -70,14 +64,30 @@
   </Target>
   -->
   <ItemGroup>
+    <None Include="paket.references" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.0' Or $(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">
+      <ItemGroup>
+        <Reference Include="Moq">
+          <HintPath>..\..\packages\blazey.substituter\lib\net40\Moq.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="blazey.substituter">
+          <HintPath>..\..\packages\blazey.substituter\lib\net40\blazey.substituter.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
       <Paket>True</Paket>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="paket.references" />
   </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And $(TargetFrameworkVersion) == 'v3.5'">

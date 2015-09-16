@@ -1,5 +1,7 @@
 source https://nuget.org/api/v2
+source ./packages/
 
+nuget blazey.substituter
 nuget Castle.Windsor
 nuget FSharp.Formatting
 nuget FAKE

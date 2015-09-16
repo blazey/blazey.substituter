@@ -1,4 +1,5 @@
 type project
+version 0.1
 owners
     Blazey Software Ltd
 authors 
@@ -19,5 +20,7 @@ summary
     A Castle Windsor facility that substitutes components for unit testing purposes.
 description
     Provides simple configuration to allow substituting Castle.Windsor components during tests.
+files
+	bin/Release/*.* ==> lib/net40
 
 

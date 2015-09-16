@@ -1,0 +1,1 @@
+ .\.paket\paket.exe add nuget blazey.substituter project .\blazey.substituter.specs

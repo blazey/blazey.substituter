@@ -1,0 +1,1 @@
+.\.paket\paket.exe pack templatefile .\src\blazey.substituter\paket.template output .\packages\

@@ -3,13 +3,13 @@
 [assembly: AssemblyTitle("blazey.substituter")]
 [assembly: AssemblyProduct("blazey.substituter")]
 [assembly: AssemblyDescription("A Castle Windsor facility that substitutes components for unit testing purposes.")]
-[assembly: AssemblyVersion("1.0")]
-[assembly: AssemblyFileVersion("1.0")]
+[assembly: AssemblyVersion("0.1")]
+[assembly: AssemblyFileVersion("0.1")]
 
 namespace blazey.substituter.Properties
 {
     internal static class AssemblyVersionInformation
     {
-        internal const string Version = "1.0";
+        internal const string Version = "0.1";
     }
 }
